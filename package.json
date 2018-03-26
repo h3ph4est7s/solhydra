@@ -1,0 +1,61 @@
+{
+  "name": "solhydra",
+  "version": "0.1.0",
+  "description": "cli tool to run solidity smart contract(s) through several analysis tools and generating a html report",
+  "bin": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlockChainCompany/solhydra.git"
+  },
+  "author": "Alexander 'rmi7' Remie <alexander@oneup.company>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlockChainCompany/solhydra/issues"
+  },
+  "homepage": "https://github.com/BlockChainCompany/solhydra#readme",
+  "dependencies": {
+    "copy-dir": "^0.3.0",
+    "escape-html": "^1.0.3",
+    "mkdirp": "^0.5.1",
+    "pug": "^2.0.0-rc.4",
+    "rimraf": "^2.6.2",
+    "showdown": "^1.8.6",
+    "soljitsu": "0.1.3",
+    "untildify": "^3.0.2",
+    "yargs": "^10.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-plugin-import": "^2.7.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [
+    "ethereum",
+    "solidity",
+    "util",
+    "blockchain",
+    "audit",
+    "sol",
+    "truffle",
+    "zeppelin",
+    "open-zeppelin",
+    "smart contract",
+    "smart-contract",
+    "cli",
+    "command line",
+    "soljitsu",
+    "solhydra",
+    "mythril",
+    "report",
+    "oyente",
+    "solgraph",
+    "solidity-coverage",
+    "solidity-analyzer",
+    "solium",
+    "solhint"
+  ]
+}
