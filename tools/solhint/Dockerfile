@@ -1,4 +1,4 @@
-FROM node:8.7.0-alpine
+FROM node:8.7.0
 
 # install solhint globally
 RUN npm install -g --quiet --no-progress solhint

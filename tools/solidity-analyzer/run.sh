@@ -13,6 +13,5 @@ do
   fi
 
   node /solidity-analyzer/cli.js $filepath 2>&1 | tee /app/output/$filename
-
-  [[ -s /app/output/$filename ]] || echo "Found nothing" > /app/output/$filename
+  if [ -f /app/output/$filename ]; then echo "Found nothing" > /app/output/$filename; fi
 done

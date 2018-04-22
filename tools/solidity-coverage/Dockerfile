@@ -1,7 +1,7 @@
-FROM node:8.7.0-alpine
+FROM node:8.7.0
 
 # need these deps for npm install
-RUN apk add --no-cache python gcc g++ make git
+RUN apt-get install python gcc g++ make git
 
 # install truffle globally, required by solidity-coverage
 RUN npm install --quiet --no-progress --global truffle

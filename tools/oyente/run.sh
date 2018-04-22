@@ -14,5 +14,5 @@ do
   fi
 
   # NOTE: oyente outputs to stderr
-   oyente -s $filepath 2>&1 | tee /app/output/$filename
+   /oyente/oyente/oyente.py -s $filepath 2>&1 | tee /app/output/$filename
 done

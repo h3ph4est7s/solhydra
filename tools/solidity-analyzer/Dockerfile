@@ -1,15 +1,18 @@
-FROM node:8.7.0-alpine
+FROM node:8.7.0
 
 # need these deps for npm install
-RUN apk add --no-cache python gcc g++ make git
-
-# install truffle globally, required by solidity-coverage
-RUN npm install --quiet --no-progress --global truffle
+RUN apt-get install python gcc g++ make git
 
 # download + install solidity-analyzer
 RUN git clone https://github.com/quantstamp/solidity-analyzer.git && \
     cd solidity-analyzer && \
     npm i
+
+# copy patch
+COPY error.patch /app/error.patch
+
+# execute patch
+RUN patch /solidity-analyzer/lib/astvisitor.js < /app/error.patch
 
 # copy start script
 COPY run.sh /app/run.sh

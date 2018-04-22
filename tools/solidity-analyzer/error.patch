@@ -1,0 +1,11 @@
+--- astvisitor.js       2018-04-22 01:21:43.465292000 +0000
++++ /solidity-analyzer/lib/astvisitor.js        2018-04-22 01:18:59.573292000 +0000
+@@ -3,7 +3,7 @@
+ ASTVisitor = function(){
+
+     this.visit = function(node) {
+-
++       if (node === null) return
+         // Do not visit anymore
+         if (this.stopVisit()) {
+             return;

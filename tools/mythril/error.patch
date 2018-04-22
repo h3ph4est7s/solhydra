@@ -1,0 +1,15 @@
+--- integer.py	2018-04-21 22:54:01.565292000 +0000
++++ /usr/local/lib/python3.6/dist-packages/mythril/analysis/modules/integer.py	2018-04-21 22:48:28.633292000 +0000
+
+@@ -34,8 +35,10 @@
+             logging.debug("Checking for integer underflow")
+             issues += _check_integer_underflow(statespace, state, node)
+             logging.debug("Checking for integer overflow")
+-            issues += _check_integer_overflow(statespace, state, node)
+-
++            try:
++                issues += _check_integer_overflow(statespace, state, node)
++            except Exception:
++                pass
+     return issues
+ 

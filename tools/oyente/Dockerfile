@@ -1,12 +1,7 @@
-FROM ubuntu:16.04
+FROM luongnguyen/oyente
 
 # we want latest solc version, therefore we don't use the Docker container provided by oyente
-RUN apt-get update && \
-    apt-get install -y build-essential software-properties-common && \
-    add-apt-repository -y ppa:ethereum/ethereum && \
-    apt-get update && \
-    apt-get install -y solc ethereum python python-pip && \
-    pip install oyente
+SHELL ["/bin/bash", "-c"]
 
 COPY run.sh /app/run.sh
 

@@ -45,7 +45,7 @@ cd /app/separate-repo
 npm install --quiet
 
 # BUG: installing solidity-coverage globally doesn't seem to work
-npm install solidity-coverage@0.4.3
+npm install solidity-coverage
 
 #---------------------------#
 #                           #
