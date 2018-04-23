@@ -30,32 +30,32 @@ services:
       - ./workspace/input/:/app/input/
       - ./workspace/output/oyente:/app/output/
 
-  solhint:
-    build: ./tools/solhint
-    volumes:
-      - ./workspace/input/:/app/input/
-      - ./workspace/output/solhint:/app/output/
+  #solhint:
+  #  build: ./tools/solhint
+  #  volumes:
+  #    - ./workspace/input/:/app/input/
+  #    - ./workspace/output/solhint:/app/output/
 
-  solidity-coverage:
-    build: ./tools/solidity-coverage
-    volumes:
-      - ./workspace/input/:/app/input/
-      - ./workspace/output/solidity-coverage:/app/output/
+  #solidity-coverage:
+  #  build: ./tools/solidity-coverage
+  #  volumes:
+  #    - ./workspace/input/:/app/input/
+  #    - ./workspace/output/solidity-coverage:/app/output/
 
-  solidity-analyzer:
-    build: ./tools/solidity-analyzer
-    volumes:
-      - ./workspace/input/:/app/input/
-      - ./workspace/output/solidity-analyzer:/app/output/
+  #solidity-analyzer:
+  #  build: ./tools/solidity-analyzer
+  #  volumes:
+  #    - ./workspace/input/:/app/input/
+  #    - ./workspace/output/solidity-analyzer:/app/output/
 
-  solgraph:
-    build: ./tools/solgraph
-    volumes:
-      - ./workspace/input/:/app/input/
-      - ./workspace/output/solgraph:/app/output/
+  #solgraph:
+  #  build: ./tools/solgraph
+  #  volumes:
+  #    - ./workspace/input/:/app/input/
+  #    - ./workspace/output/solgraph:/app/output/
 
-  solium:
-    build: ./tools/solium
-    volumes:
-      - ./workspace/input/:/app/input/
-      - ./workspace/output/solium:/app/output/
+  #solium:
+  #  build: ./tools/solium
+  #  volumes:
+  #    - ./workspace/input/:/app/input/
+  #    - ./workspace/output/solium:/app/output/
