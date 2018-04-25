@@ -48,11 +48,11 @@ services:
   #    - ./workspace/input/:/app/input/
   #    - ./workspace/output/solidity-analyzer:/app/output/
 
-  #solgraph:
-  #  build: ./tools/solgraph
-  #  volumes:
-  #    - ./workspace/input/:/app/input/
-  #    - ./workspace/output/solgraph:/app/output/
+  solgraph:
+    build: ./tools/solgraph
+    volumes:
+      - ./workspace/input/:/app/input/
+      - ./workspace/output/solgraph:/app/output/
 
   #solium:
   #  build: ./tools/solium

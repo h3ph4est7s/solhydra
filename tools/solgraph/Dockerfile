@@ -5,8 +5,9 @@ FROM node:8.7.0
 RUN apt-get update -y && apt-get install -y git graphviz
 
 # download + install solgraph
-RUN git clone https://github.com/raineorshine/solgraph.git && \
+RUN git clone https://github.com/h3ph4est7s/solgraph.git && \
     cd solgraph && \
+    git checkout add-new-solidity-features && \
     npm i && \
     npm run build
 
